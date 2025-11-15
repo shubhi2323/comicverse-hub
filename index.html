@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse Hub - Your Ultimate Comic Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ComicVerse Hub</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="cart.html" class="cart-icon">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel" id="heroCarousel">
+        <div class="hero-collage">
+            <div class="collage-image" style="background-image: url('assets/images/comic-001.jpg');"></div>
+            <div class="collage-image" style="background-image: url('assets/images/comic-002.jpg');"></div>
+            <div class="collage-image" style="background-image: url('assets/images/comic-003.jpg');"></div>
+            <div class="collage-image" style="background-image: url('assets/images/comic-004.jpg');"></div>
+            <div class="collage-image" style="background-image: url('assets/images/comic-005.jpg');"></div>
+            <div class="collage-image" style="background-image: url('assets/images/comic-006.jpg');"></div>
+        </div>
+        <div class="carousel-overlay">
+            <div class="carousel-content">
+                <h1>Welcome to ComicVerse Hub</h1>
+                <p>Discover the greatest collection of comics from Marvel, DC, and Image</p>
+                <a href="browse.html" class="btn-primary">Explore Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Releases Section -->
+    <section class="section">
+        <h2 class="section-title">New Releases</h2>
+        <div class="comic-grid" id="newReleases"></div>
+    </section>
+
+    <!-- Popular Series Section -->
+    <section class="section">
+        <h2 class="section-title">Popular Series</h2>
+        <div class="comic-grid" id="popularSeries"></div>
+    </section>
+
+    <!-- Publisher Spotlights Section -->
+    <section class="section publisher-spotlights">
+        <h2 class="section-title spotlight-title">Publisher Spotlights</h2>
+        <div class="spotlights-grid">
+            <div class="spotlight-card spotlight-marvel">
+                <h3 class="spotlight-name">Marvel</h3>
+                <p class="spotlight-description">Home of Spider-Man, X-Men, and The Avengers</p>
+                <a href="browse.html?publisher=Marvel" class="btn-spotlight">Explore Marvel</a>
+            </div>
+            <div class="spotlight-card spotlight-dc">
+                <h3 class="spotlight-name">DC Comics</h3>
+                <p class="spotlight-description">Featuring Batman, Superman, and Wonder Woman</p>
+                <a href="browse.html?publisher=DC" class="btn-spotlight">Explore DC</a>
+            </div>
+            <div class="spotlight-card spotlight-image">
+                <h3 class="spotlight-name">Image Comics</h3>
+                <p class="spotlight-description">Independent stories like Saga and The Walking Dead</p>
+                <a href="browse.html?publisher=Image" class="btn-spotlight">Explore Image</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-icons">
+            <button class="footer-btn" id="footerHome" title="Back to Top">
+                <svg viewBox="0 0 24 24" class="footer-icon">
+                    <path fill="currentColor" d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/>
+                </svg>
+            </button>
+
+            <button class="footer-btn" id="footerNew" title="New Releases">
+                <svg viewBox="0 0 24 24" class="footer-icon">
+                    <path fill="currentColor" d="M12 17.3l6.18 3.7-1.64-7.03L21 9.24l-7.19-.61L12 2 10.19 8.63 3 9.24l4.46 4.73L5.82 21z"/>
+                </svg>
+            </button>
+
+            <button class="footer-btn" id="footerBrowse" title="Browse Comics">
+                <svg viewBox="0 0 24 24" class="footer-icon">
+                    <path fill="currentColor" d="M3 3h8v8H3V3m10 0h8v8h-8V3M3 13h8v8H3v-8m10 0h8v8h-8v-8z"/>
+                </svg>
+            </button>
+        </div>
+
+        <p class="footer-text">© 2024 ComicVerse Hub. All rights reserved. This is a simulation website.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Modal Title</h2>
+            <p id="modalMessage">Modal Message</p>
+            <button class="modal-close" id="modalClose">Close</button>
+        </div>
+    </div>
+
+    <script src="js/comics.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

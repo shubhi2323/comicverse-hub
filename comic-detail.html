@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Details - ComicVerse Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ComicVerse Hub</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="cart.html" class="cart-icon">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detail Content -->
+    <div class="detail-container">
+        <div class="detail-content" id="detailContent">
+            <div class="detail-cover-container">
+                <img src="" alt="Comic Cover" class="detail-cover" id="detailCover">
+            </div>
+            <div class="detail-info">
+                <h1 id="detailTitle">Loading...</h1>
+                <div class="detail-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Publisher</span>
+                        <span class="meta-value" id="detailPublisher">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Genre</span>
+                        <span class="meta-value" id="detailGenre">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Release Date</span>
+                        <span class="meta-value" id="detailDate">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Creators</span>
+                        <span class="meta-value" id="detailCreators">-</span>
+                    </div>
+                </div>
+                <div class="detail-price" id="detailPrice">$0.00</div>
+                <p class="detail-description" id="detailDescription">Loading description...</p>
+                <button class="btn-add-cart" id="addToCartBtn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-icons">
+            <button class="footer-btn" id="footerHome" title="Back to Top">
+                <svg viewBox="0 0 24 24" class="footer-icon">
+                    <path fill="currentColor" d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/>
+                </svg>
+            </button>
+
+            <button class="footer-btn" id="footerNew" title="New Releases">
+                <svg viewBox="0 0 24 24" class="footer-icon">
+                    <path fill="currentColor" d="M12 17.3l6.18 3.7-1.64-7.03L21 9.24l-7.19-.61L12 2 10.19 8.63 3 9.24l4.46 4.73L5.82 21z"/>
+                </svg>
+            </button>
+
+            <button class="footer-btn" id="footerBrowse" title="Browse Comics">
+                <svg viewBox="0 0 24 24" class="footer-icon">
+                    <path fill="currentColor" d="M3 3h8v8H3V3m10 0h8v8h-8V3M3 13h8v8H3v-8m10 0h8v8h-8v-8z"/>
+                </svg>
+            </button>
+        </div>
+
+        <p class="footer-text">© 2024 ComicVerse Hub. All rights reserved. This is a simulation website.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Comic Added to Cart!</h2>
+            <p id="modalMessage">The comic has been successfully added to your cart.</p>
+            <button class="modal-close" id="modalClose">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="js/comics.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>
+
+
